@@ -13,7 +13,18 @@ body {
    min-height: 100vh;
    position: relative;
 }
+.body-grid {
+   width: 100vw;
+   height: 100vh;
+   display: flex;
 
+}
+.main-side {
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+   width: calc(100%-300px);
+}
 button {
    position: absolute;
    top: 70%;
@@ -43,75 +54,75 @@ button:active {
 .main {
    width: 80%;
    height: 55%;
-   background: #4545ff;
+   background: #181818;
    position: absolute;
    bottom: 0;
 }
 
+.main-numbers {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+.final-number {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 50px 0 30px 0;
+}
+.usable-nums {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   gap: 30px;
+}
 .main .number {
    display: flex;
    align-items: center;
-   position: absolute;
-   top: 40px;
-   width: 30%;
-   height: 30%;
-   left: 40%;
    gap: 1em;
 }
 
-.main .number .digit {
-   width: 20%;
-   height: 70%;
+.digit {
+   display: flex;
    align-items: center;
-   justify-content: space-around;
-   color: white;
-   background: #0b0f65;
-   border-radius: 7px;
-   border: 3px solid #fff;
-   font-size: 4em;
+   justify-content: center;
+   background-color: #121212;
+   font-size: 1.5em;
+   color: #fff;
+   border-radius: 6px;
+   border: 1px solid #ffffff20;
+}
+
+.main .number .digit {
+   width: 70px;
+   aspect-ratio: 1;
+   font-size: 3em;
 }
 
 .main .digits {
    display: flex;
    flex-wrap: wrap;
    align-items: center;
-   position: absolute;
-   top: 40%;
+   
    border-radius: 20px;
-   width: 35%;
-   height: 15%;
-   left: 15%;
+   
    gap: 1em;
 }
 
 .main .digits .digit {
-   width: 15%;
-   height: 100%;
-   align-items: center;
-   justify-content: space-around;
-   color: white;
-   background: #0b0f65;
-   border-radius: 7px;
-   border: 3px solid #fff;
-   font-size: 3em;
+   font-size: 2em;
+   width: 50px;
+   aspect-ratio: 1;
 }
 
 .small-num {
    display: flex;
    flex-wrap: wrap;
-   align-items: center;
-   justify-content: space-around;
-   position: absolute;
-   top: 40%;
-   background: #0b0f65;
-   border-radius: 7px;
-   border: 3px solid #fff;
-   width: 10%;
-   height: 15%;
-   left: 50%;
+   width: 100px;
+   aspect-ratio: 2;
    gap: 1em;
-   color: white;
-   font-size: 3em;
+   font-size: 2em;
 }
 
 .big-num {
@@ -119,17 +130,10 @@ button:active {
    flex-wrap: wrap;
    align-items: center;
    justify-content: space-around;
-   position: absolute;
-   top: 40%;
-   background: #0b0f65;
-   border-radius: 7px;
-   border: 3px solid #fff;
-   width: 10%;
-   height: 15%;
-   left: 70%;
+   width: 100px;
+   aspect-ratio: 2;
    gap: 1em;
-   color: white;
-   font-size: 3em;
+   font-size: 2em;
 }
 
 .digit.stop::before {
@@ -138,7 +142,6 @@ button:active {
 }
 
 .digit::before {
-   margin-left: 20px;
    content: attr(data-num);
    animation: animateDigit infinite 0.4s;
 }
@@ -324,12 +327,13 @@ button:active {
 .box {
    width: 80%;
    height: 30%;
-   background: #0b1065b5;
    position: absolute;
    bottom: 10%;
    left: 10%;
-   border: 3px solid #fff;
-   border-radius: 5px;
+
+   border: 1px solid #ffffff20;
+   background-color: #242424;
+   border-radius: 6px;
 }
 
 .box .choose-num1 {
@@ -416,6 +420,7 @@ input::-webkit-inner-spin-button {
    display: flex;
    flex-direction: column;
    justify-content: space-between;
+   border-left: 1px solid #ffffff20;
 }
 
 .side h1 {
