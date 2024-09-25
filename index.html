@@ -1,70 +1,80 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Moj Broj</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,301,400,401,500,501,700,701,900,901&display=swap" rel="stylesheet">
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>Moj Broj by Petar Plazinić</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,301,400,401,500,501,700,701,900,901&display=swap"
+      rel="stylesheet">
 
 </head>
+
 <body>
-    <div class="top">
-        <div class="line">
-            <div class="timer">
-                <div class="time"></div>
-            </div>
-        </div>
-    </div>
-    <div class="main" id="refresh-section">
-        <div class="hor-line"></div>
-        <div class="blue-points">0</div>
-        <div class="red-points">0</div>
-        <div class="number">
-            <div id="digit1" class="digit" data-num="0"></div>
-            <div id="digit2" class="digit hide" data-num="0"></div>
-            <div id="digit3" class="digit hide" data-num="0"></div>
-        </div>
-        <div class="digits">
-            <div class="digit click hide" data-num="0"></div>
-            <div class="digit click hide" data-num="0"></div>
-            <div class="digit click hide" data-num="0"></div>
-            <div class="digit click hide" data-num="0"></div>
-        </div>
-        <div class="small-num digit click hide" data-num="0"></div>
-        <div class="big-num digit click hide" data-num="0"></div>
-        <div class="box">
-            <p class="resenje"></p>
-            <input type="number" class="choose-num1">
-            <div class="final-num"></div>
-            <input type="number" class="choose-num2">
-        </div>
-    </div>
-    <div class="side">
-        <div class="poeni">
-            <h1>POENI</h1>
-            <ul></ul>
-            <p>Ukupno: ---------------- </p>
-        </div>
-        <div class="operacije">
-                <div class="operacija">+</div>
-                <div class="operacija">-</div>
-                <div class="operacija">*</div>
-                <div class="operacija">/</div>
-                <div class="operacija zagrada">(</div>
-                <div class="operacija zagrada">)</div>
-        </div>
-        <div class="potvrdi">POTVRDI</div>
-        <div class="ponisti"><i class='fas fa-backspace'></i></div>
-        <div class="igraj-opet">IGRAJ PONOVO</div>
-    </div>
-    <div class="popup">
-        <i class='fas fa-window-close'></i>
-        <h1><span class="dobro"></span>, osvojio si <span class="poeni"></span> poena</h1>
-        <p>Počni iz početka</p>
-    </div>
-    <script src="script.js"></script>
+   <div class="top">
+      <div class="line">
+         <div class="timer">
+            <div class="time"></div>
+         </div>
+      </div>
+   </div>
+   <div class="main" id="refresh-section">
+      <div class="hor-line"></div>
+      <div class="blue-points">0</div>
+      <div class="red-points">0</div>
+      <div class="number">
+         <div id="digit1" class="digit" data-num="0"></div>
+         <div id="digit2" class="digit hide" data-num="0"></div>
+         <div id="digit3" class="digit hide" data-num="0"></div>
+      </div>
+      <div class="digits">
+         <div class="digit click hide" data-num="0"></div>
+         <div class="digit click hide" data-num="0"></div>
+         <div class="digit click hide" data-num="0"></div>
+         <div class="digit click hide" data-num="0"></div>
+      </div>
+      <div class="small-num digit click hide" data-num="0"></div>
+      <div class="big-num digit click hide" data-num="0"></div>
+      <div class="box">
+         <p class="resenje"></p>
+         <input type="number" class="choose-num1">
+         <div class="final-num"></div>
+         <input type="number" class="choose-num2">
+      </div>
+   </div>
+   <div class="side">
+      <div class="poeni">
+         <h1>POENI</h1>
+         <ul></ul>
+         <p>Ukupno: ---------------- </p>
+      </div>
+      <div class="side-wrap">
+         <div class="operacije">
+            <div class="operacija">+</div>
+            <div class="operacija">-</div>
+            <div class="operacija">*</div>
+            <div class="operacija">/</div>
+            <div class="operacija zagrada">(</div>
+            <div class="operacija zagrada">)</div>
+         </div>
+         <div class="controls">
+            <div class="potvrdi">Potvrdi</div>
+            <div class="ponisti"><i class='fas fa-backspace'></i></div>
+            <div class="igraj-opet">Igraj Ponovo</div>
+         </div>
+      </div>
+
+
+   </div>
+   <div class="popup">
+      <i class='fas fa-window-close'></i>
+      <h1><span class="dobro"></span>, osvojio si <span class="poeni"></span> poena</h1>
+      <p>Počni iz početka</p>
+   </div>
+   <script src="script.js"></script>
 </body>
+
 </html>
